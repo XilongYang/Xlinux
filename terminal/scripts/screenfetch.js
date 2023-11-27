@@ -1,6 +1,6 @@
 function screenfetch() {
-    function diffTime(startDate,endDate) {
-        var diff=endDate.getTime() - startDate;//.getTime();//时间差的毫秒数
+    function diffTime(now) {
+        var diff=now - sessionStorage.getItem("bootTime");
     
         //计算出相差天数
         var days=Math.floor(diff/(24*3600*1000));
@@ -71,7 +71,7 @@ function screenfetch() {
         + "<br>OS: Xinux"
         + "<br>Host:Web"
         + "<br>Kernel: 0.1.0"
-        + "<br>Uptime: " + diffTime(new Date(2023, 11, 24), new Date())
+        + "<br>Uptime: " + diffTime(Date.now())
         + "<br>Shell: Xiell"
         + "<br>Resolution: " + window.screen.width + "x" + window.screen.height 
         + "<br>Terminal: " + getBrowserName()

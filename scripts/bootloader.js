@@ -102,6 +102,7 @@ function InitBootloader() {
     UpdateMenuEntry();
     var body = document.getElementsByTagName("body")[0];
     body.addEventListener('keydown', DealKey); 
+    sessionStorage.setItem("bootTime", Date.now());
 }
 
 function DealKey(e) {
