@@ -39,7 +39,7 @@ function RunXinux() {
     var loader = document.getElementById("loader");
     loader.style.display = 'inline';
     loader.addEventListener('animationend', function(){
-        window.location.replace("terminal");
+        window.location.replace("/xinux/terminal");
     });
 }
 
@@ -106,7 +106,6 @@ function InitBootloader() {
 }
 
 function DealKey(e) {
-    console.log(e);
     if (e.code == "ArrowUp") {
         MoveSelectEntry(-1);
         UpdateMenuEntry();

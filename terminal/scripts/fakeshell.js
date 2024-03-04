@@ -75,7 +75,7 @@ function read_cmd(event){
         msg.innerHTML = "Rebooting system...";
 
         setTimeout(() => {
-            window.location.replace("/");
+            window.location.replace("/xinux");
         }, 1500);
         
     } else {
