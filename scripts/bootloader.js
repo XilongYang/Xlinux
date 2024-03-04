@@ -44,7 +44,13 @@ function RunXinux() {
 }
 
 function AboutMe() {
-
+    var menu = document.getElementById("menu");
+    menu.style.display = 'none';
+    var loader = document.getElementById("loader");
+    loader.style.display = 'inline';
+    loader.addEventListener('animationend', function(){
+        window.location.replace("/");
+    });
 }
 
 var selectedMenuEntry = 0;
