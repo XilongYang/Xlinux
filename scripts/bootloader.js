@@ -39,7 +39,7 @@ function RunXinux() {
     var loader = document.getElementById("loader");
     loader.style.display = 'inline';
     loader.addEventListener('animationend', function(){
-        window.location.replace("/terminal");
+        window.location.replace("terminal");
     });
 }
 
@@ -49,7 +49,7 @@ function AboutMe() {
 
 var selectedMenuEntry = 0;
 var menuEntrys = [ 
-    new Entry(new Icon(IconTemplate.IMG, "/res/xinux.svg"), EntryTemplate.SELECTED, "Run Xinux"
+    new Entry(new Icon(IconTemplate.IMG, "res/xinux.svg"), EntryTemplate.SELECTED, "Run Xinux"
       , "Xinux: a Unix-like operating system simulation."
       , RunXinux)
     , new Entry(new Icon(IconTemplate.MATERIAL_ICON, "person"), EntryTemplate.NORMAL, "About Author"
