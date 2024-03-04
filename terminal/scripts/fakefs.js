@@ -11,14 +11,12 @@ files.set("/README.md", "Hello! Xilong's Here.<br>"
     +"You can learn more about me at <a target='_blank' href='https://xilong.site'>xilong.site</a>.");
 
 files.set("/blog/posts.txt"
-, "<a target='_blank' href='/blog/2022/01/08/0033-Haskell:operator_and_lazy/'>Haskell：理解惰性求值与运算符优先级</a><br>"
-+ "<a target='_blank' href='/blog/2021/09/23/0028-RB_Tree_C++/'>红黑树概念解析与C++实现</a><br>"
-+ "<a target='_blank' href='/blog/2021/07/19/0019-C++:Variable_initialization/'>C++变量初始化</a><br>"
-+ "<a target='_blank' href='/blog'>Find more in my blog!</a><br>"
+, "<a target='_blank' href='/posts/001_C_The_Binary_Representation_of_Float_Numbers_IEEE_754.html'>C: The Binary Representation of Float Numbers (IEEE 754)</a><br>"
++ "<a target='_blank' href='/'>Find more in my blog!</a><br>"
 );
 
 files.set("/works/README.md"
-, "<a target='_blank' href='https://github.com/XilongYang/littledb'>LittleDB</a>: A simple C++ library provides an embedded K-V database and some encrypt/decrypt concerned functions.<br>"
+, "<a target='_blank' href='https://github.com/XilongYang/STAMP'>STAMP</a>: IETF RFC8762: Simple Two-Way Active Measure Protocol. C++ Implementation.<br>"
 );
 
 function path(dir, type = "file") {
